@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 2px solid #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 9px;
+  }
+  
+  .card img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 9px;
+  }
+  
+  .card.matched {
+    background-color: #90ee90;
+    border-color: #006400;
+    pointer-events: none;
+  }
+  
+  .card.flipped {
+    background-color: #fff;
+    cursor: default;
+  }
+  .card img.hidden {
+    visibility: hidden; /* Скрывает изображение */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card.matched {
+    border: 2px solid green;
+    pointer-events: none; /* Делаем карту неактивной */
+  }
+  
+  
+  #score-board {
+    margin-top: 20px;
+  }
+  
